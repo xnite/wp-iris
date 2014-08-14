@@ -11,6 +11,8 @@ License: http://xnite.org/copyright#code
 
 function iris_embed_func($atts) {
 	extract(shortcode_atts(array(
+		'width'				=> '95%',
+		'height'			=> '450px',
 		'clientpath'		=> 'http://irc-source.com:8080',
 		'nickprefix'		=> 'WP-IRIS_',
 		'channel'			=> 'lobby',
