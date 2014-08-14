@@ -19,7 +19,7 @@ function iris_embed_func($atts) {
 		'fgcb'				=> '888888',
 		'bgc'				=> 'ffffff'
 	), $atts));
-	return '<iframe style="width:'.$width.';height:'.$height.';border:0;" src="$clientpath.'/?nick='.$nickprefix.'....&channels='.urlencode($channel)&fg_color='.$fgca.'&fg_sec_color='.$fgcb.'&bg_color='.$bgc.'&prompt='.$prompt.'"></iframe>';
+	return '<iframe style="width:'.$width.';height:'.$height.';border:0;" src="'.$clientpath.'/?nick='.$nickprefix.'....&channels='.urlencode($channel).'&fg_color='.$fgca.'&fg_sec_color='.$fgcb.'&bg_color='.$bgc.'&prompt='.$prompt.'"></iframe>';
 }
 add_shortcode('iris', 'iris_embed_func');
 ?>
