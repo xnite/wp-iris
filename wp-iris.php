@@ -3,19 +3,19 @@
 Plugin Name: WP-IRIS
 Plugin URI: https://github.com/xnite/wp-iris
 Description: Allows you to embed an IRIS IRC client with a shortcode.
-Version: 1.0
-Author: Robert Whitney &lt;<a href="mailto:xnite@xnite.org">xnite@xnite.org</a>&gt;
-Author URI: http://xnite.org
-License: http://xnite.org/copyright#code
+Version: 1.1
+Author: Robert Whitney &lt;<a href="mailto:xnite@xnite.me">xnite@xnite.me</a>&gt;
+Author URI: https://xnite.me
+License: GNU General Public License v3
 */
 
 function iris_embed_func($atts) {
 	extract(shortcode_atts(array(
 		'width'				=> '95%',
 		'height'			=> '450px',
-		'clientpath'		=> 'http://irc-source.com:8080',
+		'clientpath'		=> 'https://webchat.atheme.org',
 		'nickprefix'		=> 'WP-IRIS_',
-		'channel'			=> 'lobby',
+		'channel'			=> 'Atheme',
 		'prompt'			=> 1,
 		'fgca'				=> '000000',
 		'fgcb'				=> '888888',
